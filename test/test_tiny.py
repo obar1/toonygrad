@@ -1,7 +1,7 @@
 import pytest
 from toonygrad import Tensor
 
-def test_tensor_addition():
+def test_plus():
     out = Tensor([1., 2, 3]) + Tensor([4., 5, 6])
     assert out.tolist() == [5.0, 7, 9]
 
